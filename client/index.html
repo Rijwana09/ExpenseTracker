@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="head">
+            <h1>Expense Tracker</h1>
+        </div>
+
+        <label for="initialBalance">Starting Balance: </label>
+        <input type="number" name="initialBalance" id="initialBalance">
+
+        <form action="/" class="content">
+            <ul>
+                <li>
+                    <label for="title">Title :</label>
+                    <input type="text" name="title" id="title">
+                </li>
+                <li> 
+                    <label for="amount">Amount :</label>
+                    <input type="number" name="amount" id="amount"></li>
+                <li>
+                    <label for="category">Category :</label>
+                    <select name="category" id="category">
+                        <option value="food">Food</option>
+                        <option value="rent">Rent</option>
+                        <option value="gym">Gym</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="grocery">Grocery</option>
+                        <option value="travel">Travel</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="others">Others</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="date">Date :</label>
+                    <input type="date" name="date" id="date">
+                </li>
+            </ul>
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div id="end">
+            <label>Total Expenses : </label>
+            <p id="totalExpenses">₹0</p>
+            <br>
+            <label>Left Balance : </label>
+            <p id="leftBalance">₹0</p>
+        </div>
+        
+    </div>
+</body>
+</html>
