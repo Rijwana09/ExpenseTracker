@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+#main {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#head h1 {
+    font-size: 32px;
+}
+
+/* Starting Balance */
+
+#initialBalance {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Expense Form */
+
+.content {
+    margin-top: 30px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content li {
+    margin-bottom: 20px;
+}
+
+.content label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+/* Inputs */
+
+.content input,
+.content select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.content input:focus,
+.content select:focus,
+#initialBalance:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Add Expense Button */
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Balance Section */
+
+#end {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f6f8;
+    border-radius: 8px;
+}
+
+#end p {
+    margin-bottom: 8px;
+}
+
+#totalExpenses,
+#leftBalance {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    #main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #head h1 {
+        font-size: 26px;
+    }
+}
